@@ -1,0 +1,97 @@
+Prueba de JavaScript
+
+// ---------------------- 1 ----------------------
+Variables y Operaciones. 
+
+¿Qué es una variable y para qué sirve?
+Una variable es un espacio reservado de memoria del sistema. Sirve para almacenar información importante que nos interese.
+
+¿Cuál es la diferencia entre declarar e inicializar una variable?
+Declaración se le llama al agrupamiento de recursos que requieren que una variable o funcion necesita para existir en el código. 
+Inicializar se refiere al valor que se le asigna a esa función o variable.
+
+¿Cuál es la diferencia entre sumar números y concatenar strings?
+Sumar números se refiere a una operación matemática común, cuando los tipos de datos lo permitan, se efectuará una suma convencional. 
+Concatenar strings, se refiere a la agrupación de textos en una sola variable de referencia.
+
+¿Cuál operador me permite sumar o concatenar?
++
+
+// ---------------------- 2 ----------------------
+Funciones
+
+¿Qué es una función?
+Una función es una rutina de código que realiza una tarea específica.
+
+¿Cuándo me sirve usar una función en mi código?
+Es de utilidad cuando un proceso se debe repetir constantemente, y para no crear tantas líneas de código, definir una función nos permite invocarla o llamarla en donde corresponda y nos evitamos escribir de más. 
+Hace que el código en general sea más escalable y entendible al final. 
+
+¿Cuál es la diferencia entre parámetros y argumentos de una función?
+Los parámetros son los que se definen en la función como aquellas variables que se enviarán cuando la función sea llamada o invocada. 
+Los argumentos son los que se indican en la función cuando es invocada desde otro punto del código. 
+
+En resumen, lo que difiere es el punto de vista. Un parámetro es desde el punto de vista de la función y un argumentos es desde el punto de vista de la llamada de la función. 
+
+// ---------------------- 3 ----------------------
+Condicionales
+
+¿Qué es una condicional?
+Son sentencias de código que nos permiten evaluar si una parte del código cumple con cierto criterio que estamos estableciendo, que pueda ser verdadero o falso y en dado caso se cumpla, ejecutará ciertas líneas de código. 
+De una forma más gráfica sirve de llave de paso para aquellos datos que cumplan una condición establecida.
+
+¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+if/else, que permite establecer dentro de if() si se cumple la condición, ejecutar el codigo a continuación. Else viene a ser el caso por defecto en el que todo lo evaluado que no cumpla con el if() terminará entrando en el código del else.
+if, else if, else. Igual que el caso anterior, pero con else if podemos definir nuevos escenarios a evaluar. 
+switch, nos permite evaluar una condición y definir n casos con los que puede coincidir de forma más efectiva que un if/else. Recomandado para varias condiciones a evaluar.
+Operador ternario, nos permite definir una condicional como if/else, pero con la siguiente estructura: (condicion) ? (codigo si se cumple) : (codigo si no se cumple);
+
+¿Puedo combinar funciones y condicionales?
+Si, una función puede contener condicionales internas que evaluen distintas partes del código.
+También una condicional puede terminar llamando a una función según la lógica que estemos aplicando. 
+
+// ---------------------- 4 ----------------------
+Ciclos 
+
+¿Qué es un ciclo?
+Un ciclo es una sentencia que nos permite repetir código según una condición que debe cumplirse, cuando ya no se cumpla, finaliza la repetición de esa porción de código. 
+Es distinta a una función porque una función debe llamarse cada vez que desea ser ejecutada, en cambio en el ciclo, automáticamentes se repetirá según la condición indicada.
+
+¿Qué tipos de ciclos existen en JavaScript?
+for/of
+for/in 
+for (let i=0; i<10; i++)
+while
+do/while
+forEach()
+
+¿Qué es un ciclo infinito y por qué es un problema?
+Un ciclo infinito se refiere a que la condición que se indica en eel ciclo siempre da un valor true por lo que el ciclo nunca termina. 
+Depende del objetivo del código, puede ser un problema o no. En el caso que en verdad querramos que el ciclo acabe, será un problema porque será una rutina infinita hasta que la máquina lo permita. 
+Si nuestro objetivo es que cierto thread se ejecute en paralelo con otras acciones, por ejemplo, no es un problema como tal. 
+El ciclo infinito más común vendría siendo un while(true) {...};
+
+¿Puedo mezclar ciclos y condicionales?
+
+Si. Un ciclo de hecho contiene una condicional implícita o explícita, que indica cuando este deberá terminar.
+Además de ello, podemos aplicar condicionales dentro del ciclo que no tengan que ver directamente con la ejecución del ciclo como tal. 
+Y también se puede utilizar ciclos dentro del código de una condicional if() {...ciclo ...};
+
+// ---------------------- 5 ----------------------
+Listas
+
+¿Qué es un array?
+Un array es un arreglo de datos, que permite tener referencias a varios datos en la misma variable y accedemos a ellas a través de su índice. 
+En Javascript este array puede tener datos de distinto tipo.
+
+¿Qué es un objeto?
+Es un conjunto de datos que estan relacionados de cierta forma, que representan un objeto útil en el código. Además de sus propiedades, también puede tener métodos.
+
+¿Cuándo es mejor usar objetos o arrays?
+Depende de la relación de los datos, por ejemplo si tenemos varias propiedades y varios arrays con cada tipo de propiedad, viene siendo más facil crear objetos que mantengan las propiedades relacionadas. 
+
+¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+Si, un array puede ser un array de objetos. Y un objeto a su vez puede contener variables de tipo Array entre sus propiedades.
+
+
