@@ -7,3 +7,6 @@ Curso práctico de Javascript impartido por Platzi.
 - Segundo paso: Implementar las fórmulas en JavaScript. 
 - Tercer paso: crear funciones 
 - Cuarto paso: integrar JavaScript con HTML. 
+
+### Taller 1 Preview ###
+![Taller 1](./taller1/taller1.png)
